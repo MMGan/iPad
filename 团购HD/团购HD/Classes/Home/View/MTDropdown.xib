@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MTDropdown">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="425"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fcd-1U-BRg" userLabel="main">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="425"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="W68-jx-fcl" userLabel="sub">
+                    <rect key="frame" x="132" y="0.0" width="132" height="425"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Fcd-1U-BRg" firstAttribute="width" secondItem="W68-jx-fcl" secondAttribute="width" id="G8m-xQ-qSZ"/>
+                <constraint firstItem="W68-jx-fcl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TaU-BO-ANi"/>
+                <constraint firstItem="Fcd-1U-BRg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gpr-Tz-Mgx"/>
+                <constraint firstItem="W68-jx-fcl" firstAttribute="leading" secondItem="Fcd-1U-BRg" secondAttribute="trailing" id="jxK-g0-STN"/>
+                <constraint firstAttribute="trailing" secondItem="W68-jx-fcl" secondAttribute="trailing" id="oCS-Up-x3t"/>
+                <constraint firstItem="Fcd-1U-BRg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pVn-Cb-kv4"/>
+                <constraint firstAttribute="bottom" secondItem="W68-jx-fcl" secondAttribute="bottom" id="vGb-2u-df8"/>
+                <constraint firstAttribute="bottom" secondItem="Fcd-1U-BRg" secondAttribute="bottom" id="zs1-dy-heI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainTabelView" destination="Fcd-1U-BRg" id="RT1-iU-OoP"/>
+                <outlet property="subTableView" destination="W68-jx-fcl" id="a8C-Gs-oH8"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="368.5"/>
+        </view>
+    </objects>
+</document>
